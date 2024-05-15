@@ -22,7 +22,7 @@ public class TP1_2 : MonoBehaviour
         // On vérifie si le bouton de la gâchette est pressé, si oui on crée un cube devant l'utilisateur
         foreach (var device in rightHandDevices)
         {
-            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primaryButton, out bool triggerValue) && triggerValue)
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.secondaryButton, out bool triggerValue) && triggerValue)
             {
                 SpawnCubeInFrontOfUser();
             }
